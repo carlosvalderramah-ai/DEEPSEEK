@@ -1,0 +1,4 @@
+# dsh-superagent-guide — bundle patch layer.
+- insert:
+    - id: superagent-guide
+      name: dsh-superagent-guide

@@ -1,0 +1,28 @@
+{
+  "name": "dsh-superagent-guide",
+  "version": "1.0.0",
+  "description": "Infografía 'DeepSeek Super-Agent · Guía 2026' como app autocontenida y plugin de DeepSeek Harness.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "guide.html",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2",
+    "@deepseek-ai/dsh-tools": "^0.1.2-rc.1",
+    "@deepseek-ai/dsh-host-webserver": "^0.1.2-rc.1"
+  },
+  "license": "MIT"
+}

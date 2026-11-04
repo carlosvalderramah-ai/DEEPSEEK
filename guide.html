@@ -55,6 +55,16 @@
   .cmp ul{margin:0;padding-left:18px;color:var(--mut)}
   .cmp li{margin:6px 0}
 
+  /* Comparison table */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);margin-top:20px}
+  .cmp-table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:760px}
+  .cmp-table th,.cmp-table td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  .cmp-table thead th{color:var(--mut);font-weight:600;font-size:12.5px;background:var(--panel2)}
+  .cmp-table td:first-child{color:var(--mut);font-weight:600;white-space:nowrap}
+  .cmp-table .hl{color:#a7f3d0;background:rgba(52,211,153,.07)}
+  .cmp-table tbody tr:last-child td{border-bottom:none}
+  .tfoot{color:var(--dim);font-size:12px;margin-top:10px}
+
   /* Timeline */
   .timeline{position:relative;padding-left:28px;border-left:2px solid var(--line)}
   .step{position:relative;margin-bottom:18px}
@@ -187,6 +197,30 @@
         </ul>
       </div>
     </div>
+
+    <h3 style="margin:24px 0 10px;font-size:16px">Comparativa detallada (2026)</h3>
+    <div class="tablewrap">
+      <table class="cmp-table">
+        <thead>
+          <tr>
+            <th>Dimensión</th>
+            <th class="hl">DeepSeek Super-Agent</th>
+            <th>Claude Code</th>
+            <th>OpenAI Codex</th>
+            <th>Factory Droid</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Enfoque</td><td class="hl">Proactivo: escucha GitHub / Feishu</td><td>Reactivo: terminal</td><td>Reactivo: terminal / IDE</td><td>Reactivo: CLI / App / SDK</td></tr>
+          <tr><td>Licencia</td><td class="hl">MIT (código gratis)</td><td>Propietaria</td><td>Propietaria</td><td>Propietaria</td></tr>
+          <tr><td>Precio</td><td class="hl">Gratis — pagas solo el modelo</td><td>Suscripción / API de Anthropic</td><td>Suscripción / API de OpenAI</td><td>$20–$200/mes + créditos</td></tr>
+          <tr><td>Activación</td><td class="hl">@mención en un issue / PR</td><td>Abrir terminal + instrucción</td><td>Abrir terminal/IDE + instrucción</td><td>Abrir Droid + instrucción</td></tr>
+          <tr><td>Entrega</td><td class="hl">Pull request en el repositorio</td><td>Edición de archivos</td><td>Edición de archivos</td><td>Edición de archivos</td></tr>
+          <tr><td>Entorno</td><td class="hl">Bundle de DeepSeek Harness</td><td>CLI de Anthropic</td><td>CLI / IDE de OpenAI</td><td>Factory App / Droid CLI / SDK</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tfoot">Fuentes: <a href="https://github.com/deepseek-ai/dsh-superagent-prototype">DeepSeek (repo oficial)</a> · <a href="https://docs.factory.com/pricing/individuals">Factory (planes y precios)</a> · <a href="https://www.techrepublic.com/es/article/news-codex-vs-claude-code/">TechRepublic (Codex vs Claude Code)</a>.</p>
   </section>
 
   <section>

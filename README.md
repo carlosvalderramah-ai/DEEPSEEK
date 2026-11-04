@@ -52,3 +52,7 @@ git remote add origin https://github.com/carlosvalderramah-ai/DEEPSEEK.git
 git branch -M main
 git push -u origin main
 ```
+
+## Estado
+
+En funcionamiento
